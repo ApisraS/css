@@ -1,0 +1,290 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    background-color: wheat;
+    display: flex;
+    width: cover;
+    height: 80px;
+    position: block;
+}
+
+.container ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-bottom: 600px;
+    font-family: "Trebuchet MS";
+    color:antiquewhite;
+    cursor: auto;
+
+
+}
+.container ul li {
+    margin-left: 20px;
+    padding: 8px;
+    margin-top: 25px;
+
+}
+
+.container ul li a {
+    list-style: none;
+    text-decoration: none;  
+    color: black;
+    scrollbar-color: brown;
+    align-items: center;
+}
+
+
+nav img {
+    height: 80px;
+    width: 90px;
+
+}
+
+header {
+    background-image: url(./img/photo3.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: auto;
+    border: 2px ;
+    background-size: cover;
+}
+
+
+.hero {
+    font-size: 8px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    height: 300px;
+    width: 300px;
+    margin: 40px auto 20px 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-right: 800px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    border: 3px solid white;
+    display: relative;
+    /* border-bottom-right-radius:50px 50px; */
+    border-right-style: solid;
+    background: transparent;
+}
+
+.hero::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+    left: 443px;
+
+  }
+
+  .hero::before .triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+    right: 400px;
+  }
+
+
+
+.hero h2 {
+    font-size: 20px;
+    color: red;
+}
+
+button a {
+    color: wheat;
+    text-shadow: 2rem black;
+}
+
+button {
+    background-color: red;
+    color: wheat;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+    display: inline-block;
+    cursor: auto;
+    box-shadow: 3px 6px 3px grey;
+
+}
+
+.hero h3 {
+    font-size: 12px;
+}
+
+.hero h3 ul li {
+    font-size: 50px;
+}
+
+.grid-con {
+    align-items: center;
+    display: flex;
+    margin-left: 100px;
+}
+
+.grid-item-1 img {
+    width: 500px;
+    height: 500px;
+    flex-wrap: row;
+    display: flex;
+    margin-top: -20px;
+    border: 1px solid wheat;
+    shape-margin: 5px;
+    align-items: stretch;
+    
+}
+
+.box {
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px grey;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    padding-left: 80px;
+    margin-left: 90px;
+    padding-top: 10px;
+    padding-right: 90px;
+    top: 800px;
+    right: 800px;
+    bottom: 50px;
+    z-index: -10;
+}
+
+.grid-item-2 {
+    display: inline;
+    font-family: "Trebuchet MS";
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 0px;
+    text-align: left;
+    color: black;
+    text-decoration: solid;
+    padding-left: 20px;
+}
+
+.hero li {
+    list-style: none;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    font-size: small;
+    color: white;
+}
+
+h4 {
+    display: inline;
+    margin-left: 50px;
+    float: center;
+    align-items: center;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h4 p {
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+footer {
+    display: inline;
+    height: auto;
+    width: 100px;
+    padding-top: 40px;
+    opacity: 0.8;
+    justify-content: center;
+    padding-left: 100px;
+
+}
+.navfoot {
+    display: inline;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navfoot ul {
+    display: flex;
+    list-style: none;
+    padding-top: 100px;
+    margin-top: 100px;
+    text-align: left;
+    padding-left: 200px;
+}
+
+
+.navfoot li a {
+    display: inline;
+    padding : 160px;
+    margin-left: 20px;    
+    border-radius: 80%;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+
+
+.navfoot li img {
+    display: flex;
+    flex-flow: row wrap;
+    float: center;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 5rem;
+    justify-content: space-between;
+}
+
+.footinfo {
+    text-align: left;
+    padding-left: 200px;
+    border-bottom: 10px ;
+    padding-top: 10px;
+    background-color: wheat;
+}
+
+.social {
+    text-align: right;
+    background-color: wheat;
+    padding-top: 10px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+    background-color: wheat;
+
+}
+
+.end {
+    text-align: center;
+    padding-top: 50px;
+    background-color: wheat;
+}

@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+}
+
+.container {
+  background-color: lightgreen;
+  margin-left: auto;
+}
+
+.container nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 15px;
+  color: white;
+}
+
+.container nav ul li img {
+  height: 50px;
+  margin-left: auto;
+}
+
+.container ul li {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  border-right: 50px;
+}
+
+.container ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+}
+
+/* <------nav------> */
+
+.parents {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 100px;
+  width: 100%;
+  height: 800px;
+  background-color: lightgreen;
+  overflow-y: hidden;
+}
+
+.parents .box1 {
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  position: absolute;
+  width: 150px;
+  height: 50%;
+}
+
+.parents .box1 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 50px;
+  overflow: hidden;
+  background-color: lightgreen;
+  z-index: 1;
+}
+
+.parents .box2 img {
+  width: 80vw;
+  height: 100%;
+}
+
+.child ul {
+  display: flex;
+  list-style: none;
+}
+
+.child ul li img {
+  height: 100px;
+  width: 20px;
+  background-color: lightgreen;
+  margin-right: 25px;
+  z-index: 1;
+}
+
+.box2 {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.box2 .green-box {
+  background-color: rgba(146, 234, 146, 0.5);
+  width: 200px;
+  height: 100%;
+}
+
+.box2 .white-box {
+  display: flex;
+  position: absolute;
+  color: grey;
+  width: 500px;
+  height: 250px;
+  transform: translate(270px, 0);
+}
+
+.box2 .white-part {
+  background-color: white;
+  position: relative;
+}
+
+.box2 .white-box h2 {
+  text-decoration-line: underline;
+  text-decoration-color: greenyellow;
+  color: grey;
+  justify-content: center;
+}
+
+.box2 .white-box button {
+  position: absolute;
+  border-radius: 0;
+  padding: 25px;
+  font-size: 20px;
+  background-color: lightgreen;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  z-index: 2;
+  bottom: -35px;
+  left: 25%;
+}
+
+.box2 .white-box button span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.box2 .white-box button span:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.box2 .white-box button:hover span {
+  padding-right: 25px;
+}
+
+.box2 .white-box button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 50px;
+  padding: 30px;
+  margin-right: 40px;
+}
+
+.card1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: grey;
+  margin-right: 20px;
+}
+.card1 h2 {
+  text-decoration-line: underline;
+  text-decoration-color: greenyellow;
+  color: grey;
+  justify-content: center;
+}
+
+.card1 button {
+  background-color: lightgreen;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 0;
+  padding: 25px;
+  font-size: 20px;
+  color: azure;
+}
+
+.card2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+  margin-right: 10px;
+}
+
+.card2 img {
+  height: 30px;
+}
+
+.card3 {
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+}
+.card3 img {
+  height: 30px;
+}
+
+section .left {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+section .left img {
+  width: 50vw;
+  height: 100%;
+  margin-left: 200px;
+  object-fit: cover;
+}
+
+section .right {
+  display: flex;
+  align-items: center;
+  border-left: 50px;
+  width: 30vw;
+  height: 200px;
+  transform: translate(-75px, 0);
+}
+
+section .right .green-box2 {
+  background-color: rgba(153, 227, 153, 0.477);
+  width: 55%;
+  height: 100%;
+}
+
+section .right .white-box2 {
+  background-color: white;
+  height: 100%;
+}
+
+section .right .white-box2 h2,
+h3,
+p {
+  color: grey;
+  margin-left: 30px;
+}
+
+section .right .white-box2 h2 {
+  text-decoration-color: lightgreen;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  justify-content: center;
+  font-size: 20px;
+}
+
+section .right .white-box2 h3 {
+  font-size: 15px;
+  justify-content: center;
+}
+
+section .right .white-box2 p {
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+section .right .white-box2 button {
+  background-color: lightgreen;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 0;
+  padding: 20px;
+  font-size: 15px;
+  color: azure;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+section .right .white-box2 button span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+section .right .white-box2 button span:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+section .right .white-box2 button:hover span {
+  padding-right: 25px;
+}
+
+section .right .white-box2 button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer .footlogo {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footlogo .class1 img {
+  height: 35px;
+  padding-left: 65px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footlogo .class1 h4 {
+  text-decoration-color: lightgreen;
+  text-decoration-line: underline;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footlogo .class2 img {
+  height: 35px;
+  padding-left: 65px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footlogo .class2 h4 {
+  text-decoration-color: lightgreen;
+  text-decoration-line: underline;
+  height: 35px;
+  padding-left: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footlogo .class3 img {
+  height: 35px;
+  padding-left: 65px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footlogo .class3 h4 {
+  text-decoration-color: lightgreen;
+  text-decoration-line: underline;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.end {
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  background-color: rgb(214, 250, 208);
+  margin-top: 100px;
+}
+
+.end .form1 h3 {
+  text-decoration-color: lightgreen;
+  text-decoration-line: underline;
+}
+
+.end .form1 li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.end .form1 ul li {
+  display: inline-block;
+  list-style: none;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.end .form1 ul li img {
+  list-style: none;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.end .form1 {
+  margin-top: 80px;
+}
+
+.end .form2 li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.end .form2 {
+  margin-top: 80px;
+}
+
+.end .form3 li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.end .form3 {
+  margin-top: 80px;
+}
+
+.end .form3 button {
+  padding: 20px;
+  background-color: lightgreen;
+  text-align: center;
+  text-decoration: solid;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 0;
+  color: azure;
+}
+
+.end .form3 button img {
+  height: 15px;
+}
